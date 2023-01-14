@@ -1,10 +1,10 @@
 /*Есть класс Book. У него есть три поля: поле String title, поле int yearOfPublishing и массив строк authors.
         Напишите геттеры и сеттеры для всех полей.*/
     public class Book {
-    String title = "Shrek";
-    int yearOfPublishing = 1990;
-    String autors = "William Steig";
-    public Book() {
+    String title;
+    int yearOfPublishing;
+    String[] autors;
+    public Book(String title, int yearOfPublishing, String[] autors) {
         this.title = title;
         this.yearOfPublishing = yearOfPublishing;
         this.autors = autors;
@@ -21,10 +21,10 @@
     public int getyearOfPublishing() {
         return this.yearOfPublishing;
     }
-    public void setAutors(String autors){
+    public void setAutors(String[] autors){
         this.autors = autors;
     }
-    public String getAutors() {
+    public String[] getAutors() {
         return this.autors;
     }
 }
